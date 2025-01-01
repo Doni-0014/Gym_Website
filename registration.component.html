@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body {
+            background-image: url('homeImage.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+        }
+        
+    </style>
+</head>
+
+<body><br>
+        <div class="row background-container">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 border border-light rounded-4 rounded-top" id="forms">
+            
+            <div class="row border  border-light bg-dark text-white p-1 rounded-top ">
+              <div class="col-md-3"></div>
+              <div class="col-md-7"><h4>!!! REGISTER !!!</h4></div>
+              <div class="col-md-2"></div>
+            </div><br>
+            <form action="" method="post" autocomplete="off" class="text-white">
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-10 ">
+                  <label for="fname" class="fw-semibold form-label">
+                     Name:<span class="required" title="This is a required field">*</span>
+                </label>
+                <div class="row">
+                  <div class="col-md-8"><input type="text" id="name" class="form-control" placeholder="Enter your name" autofocus required>
+                  </div>
+                </div>
+                <br>
+                <!-- <label for="lname" class="fw-semibold form-label">
+                    Last Name:<span class="required">*</span>
+                </label>
+        
+                <div class="row">
+                  <div class="col-md-8"><input type="text" id="lname" class="form-control" placeholder="Enter last name" required></div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-2"></div>
+                </div>
+                <br> -->
+        
+                <label for="email" class="fw-semibold form-label">Email:<span class="required">*</span></label>
+                <div class="row">
+                  <div class="col-md-8"><input type="email" id="email" name="email" class="form-control" placeholder="eg:abc@gmail.com" ></div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-2"></div>
+                </div>
+                <br>
+        
+                <label for="phone" class="fw-semibold form-label">Phone:<span class="required">*</span></label>
+                <div class="row">
+                  <div class="col-md-8"><input type="tel" name="phone" id="phone" class="form-control" placeholder="Enter phone no" pattern="[0-9]{10}" maxlength="10" required></div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-2"></div>
+                </div>
+                <br>
+
+                <label for="phone" class="fw-semibold form-label">Age:<span class="required">*</span></label>
+                <div class="row">
+                  <div class="col-md-8"><input type="tel" name="agee" id="age" class="form-control" placeholder="Enter age"  maxlength="2" required></div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-2"></div>
+                </div>
+                <br>
+
+                <label for="plan" class="fw-semibold form-label">Plan:<span class="required">*</span></label>
+                <div class="row">
+                  <div class="col-md-8">
+                    <select id="plan" class="form-select">
+                      <option value="">Select Plan</option>
+                      <option value="Basic Plan : ₹500/mo">Basic Plan : ₹500/mo</option>
+                      <option value="Standard Plan : ₹1000/mo">Standard Plan : ₹1000/mo</option>
+                      <option value="Premiun Plan : ₹2000/mo">Premiun Plan : ₹2000/mo</option>
+                      
+                      
+                      </select>
+                  </div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-2"></div>
+                </div>
+                <br>
+        
+                <label for="address" class="form-label fw-semibold">Address:<span class="required">*</span></label>
+                <div class="row">
+                  <div class="col-md-8"><textarea name="address" id="address" class="form-control" placeholder="Enter address" required></textarea>
+                  </div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-2"></div>
+                </div>
+                <br>
+        
+                <!-- <label for="gender" class="form-label fw-semibold">
+                    Gender   :<span class="required">*</span>
+                </label><br>
+                  <input type="radio" name="gender" id="male" class="form-check-input">
+                  <label for="male" >Male</label>
+                  <input type="radio" name="gender" id="female" class="form-check-input">
+                  <label for="female">Female</label>
+                  <input type="radio" name="gender" id="transgender" class="form-check-input">
+                  <label for="transgender">Transgender</label>
+                <br><br> -->
+        
+                <!-- <label for="birthday" class="fw-semibold form-label">DOB:<span class="required">*</span></label>
+                <div class="row">
+                  <div class="col-md-5"><input type="date" id="birthday" name="birthday" class="form-control" required>
+                  </div>
+                  <div class="col-md-5"></div>
+                  <div class="col-md-2"></div>
+                </div>
+                <br> -->
+                
+                <!-- <label for="state" class="fw-semibold form-label">State:<span class="required">*</span></label>
+                <div class="row">
+                  <div class="col-md-8">
+                    <select id="state" class="form-select">
+                      <option value="">Select State</option>
+                      <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                      <option value="Bihar">Bihar</option>
+                      <option value="Chhattisgarh">Chhattisgarh</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Gujarat">Gujarat</option>
+                      <option value="Himachal Pradesh">Himachal Pradesh</option>
+                      <option value="Jharkhand">Jharkhand</option>
+                      <option value="Kerala">Kerala</option>
+                      <option value="Lakshadweep">Lakshadweep</option>
+                      <option value="Maharashtra">Maharashtra</option>
+                      <option value="Meghalaya">Meghalaya</option>
+                      <option value="Nagaland">Nagaland</option>
+                      <option value="Puducherry">Puducherry</option>
+                      <option value="Rajasthan">Rajasthan</option>
+                      <option value="Tamil Nadu">Tamil Nadu</option>
+                      <option value="Tripura">Tripura</option>
+                      <option value="Uttarakhand">Uttarakhand</option>
+                      <option value="Andhra Pradesh">Andhra Pradesh</option>
+                      <option value="Assam">Assam</option>
+                      <option value="Chandigarh">Chandigarh</option>
+                      <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                      <option value="Goa">Goa</option>
+                      <option value="Haryana">Haryana</option>
+                      <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="Ladakh">Ladakh</option>
+                      <option value="Madhya Pradesh">Madhya Pradesh</option>
+                      <option value="Manipur">Manipur</option>
+                      <option value="Mizoram">Mizoram</option>
+                      <option value="Odisha">Odisha</option>
+                      <option value="Punjab">Punjab</option>
+                      <option value="Sikkim">Sikkim</option>
+                      <option value="Telangana">Telangana</option>
+                      <option value="Uttar Pradesh">Uttar Pradesh</option>
+                      <option value="West Bengal">West Bengal</option>
+                      </select>
+                  </div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-2"></div>
+                </div>
+                <br> -->
+                  
+                <!-- <label for="vehicle" class="form-label fw-semibold">
+                    Type of vehicle:<span class="required">*</span>
+                </label><br>
+                
+                <input type="checkbox" name="bike" id="bike" class="form-check-input">
+                <label for="bike">Bike  .</label>
+                <input type="checkbox" name="car" id="car" class="form-check-input">
+                <label for="car">Car  .</label>
+                <input type="checkbox" name="boat" id="boat" class="form-check-input">
+                <label for="boat">Boat  </label>
+                <br>
+                <br> -->
+        
+                <!-- <label for="myfile" class="fw-semibold form-label">Upload Aadhar:<span class="required">*</span></label><br>
+                <div class="row">
+                  <div class="col-md-8"><input type="file" name="file" id="file" class="form-control" required>
+                  </div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-2"></div>
+                </div>
+                <br> -->
+                
+                <!-- <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="">
+                  <label class="form-check-label" for="">Agree to the terms & conditions</label>
+                </div>
+                <br> -->
+        
+                <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-8">
+                    <input type="submit" name="" id="submit" class="btn btn-primary " value="Register">
+                    <input type="reset" name="" id="reset" class="btn btn-secondary" value="Reset">
+                  </div>
+                  <div class="col-md-2"></div>
+                </div><br>
+                    
+                
+                </div>
+                <div class="col-md-1"></div>
+              </div>
+              
+      
+      
+              
+              
+              </form>
+          </div>
+          <div class="col-md-4"></div>
+      
+        </div>
+         
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      
+</body>
+</html>
