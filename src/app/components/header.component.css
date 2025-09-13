@@ -45,3 +45,15 @@
 .nav-link:hover {
     color: #fff !important;
 }
+
+/* Register button specific styling */
+.nav-link.btn.btn-success {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+}
+
+.nav-link.btn.btn-success:hover {
+    background-color: #218838 !important;
+    border-color: #1e7e34 !important;
+    color: #fff !important;
+}
