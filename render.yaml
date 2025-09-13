@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: titan-fit-gym
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist/test2/browser
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
