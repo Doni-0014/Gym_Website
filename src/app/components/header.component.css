@@ -1,0 +1,47 @@
+.bg-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.nav-hover {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+
+.nav-hover:hover {
+    background-color: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+}
+
+.navbar-brand {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-brand i {
+    color: #fff;
+}
+
+.nav-link i {
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}

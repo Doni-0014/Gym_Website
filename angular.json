@@ -41,10 +41,11 @@
             ],
             "scripts": [],
             "server": "src/main.server.ts",
-            "prerender": true,
+            "prerender": false,
             "ssr": {
-              "entry": "server.ts"
-            }
+              "entry": "src/server.ts"
+            },
+            "skipLibCheck": true
           },
           "configurations": {
             "production": {
@@ -72,15 +73,61 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "test2:build-dev:development"
+          },
           "configurations": {
             "production": {
-              "buildTarget": "test2:build:production"
+              "buildTarget": "test2:build-dev:production"
             },
             "development": {
-              "buildTarget": "test2:build:development"
+              "buildTarget": "test2:build-dev:development"
             }
           },
           "defaultConfiguration": "development"
+        },
+        "build-dev": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/test2",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kB",
+                  "maximumError": "4kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
@@ -107,5 +154,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('assets/images/features.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+        }
+        
+        .feature-image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .feature-img {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: white;
+        }
+        
+        .feature-card:hover .feature-overlay {
+            opacity: 1;
+        }
+        
+        .feature-card:hover .feature-img {
+            transform: scale(1.1);
+        }
+        
+        .feature-benefits {
+            margin-top: 15px;
+        }
+        
+        .badge {
+            font-size: 0.8rem;
+            padding: 8px 12px;
+            border-radius: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll;
+            }
+            
+            .feature-img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center mb-5">
+                <h1 class="display-4 fw-bold text-white mb-4 fade-in">
+                    <i class="fas fa-star me-3"></i>Our Premium Features
+                </h1>
+                <p class="lead text-white-50 fade-in">
+                    Discover what makes Fitness Hub the ultimate destination for your fitness journey
+                </p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="modern-card feature-card h-100 slide-in-left">
+                    <div class="feature-image-container">
+                        <img src="assets/images/twentyFourHours.jpg" class="feature-img" alt="24/7 Access">
+                        <div class="feature-overlay">
+                            <i class="fas fa-clock feature-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="card-title text-gradient mb-3">
+                            <i class="fas fa-clock me-2"></i>24/7 Gym Access
+                        </h5>
+                        <p class="card-text">
+                            Whether you're an early bird or a night owl, our doors are always open, 
+                            allowing you to work out at your convenience and fit your fitness goals 
+                            into your busy schedule.
+                        </p>
+                        <div class="feature-benefits">
+                            <span class="badge bg-primary me-2">Flexible Hours</span>
+                            <span class="badge bg-success">Always Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="modern-card feature-card h-100 fade-in">
+                    <div class="feature-image-container">
+                        <img src="assets/images/personalTrainers.jpg" class="feature-img" alt="Personal Trainers">
+                        <div class="feature-overlay">
+                            <i class="fas fa-user-tie feature-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="card-title text-gradient mb-3">
+                            <i class="fas fa-user-tie me-2"></i>Expert Personal Trainers
+                        </h5>
+                        <p class="card-text">
+                            Achieve your fitness goals with the guidance of our experienced personal trainers. 
+                            Our team of certified professionals brings a wealth of knowledge and motivation 
+                            to tailor workouts specifically for you.
+                        </p>
+                        <div class="feature-benefits">
+                            <span class="badge bg-warning me-2">Certified</span>
+                            <span class="badge bg-info">Personalized</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="modern-card feature-card h-100 slide-in-right">
+                    <div class="feature-image-container">
+                        <img src="assets/images/air.jpg" class="feature-img" alt="Air Filtration">
+                        <div class="feature-overlay">
+                            <i class="fas fa-wind feature-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="card-title text-gradient mb-3">
+                            <i class="fas fa-wind me-2"></i>Advanced Air Filtration
+                        </h5>
+                        <p class="card-text">
+                            Enjoy a healthier workout environment with our advanced air filtration system. 
+                            Designed to maintain clean and fresh air, our gym ensures a safe and comfortable 
+                            space for your fitness routines.
+                        </p>
+                        <div class="feature-benefits">
+                            <span class="badge bg-success me-2">Clean Air</span>
+                            <span class="badge bg-primary">Healthy Environment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
